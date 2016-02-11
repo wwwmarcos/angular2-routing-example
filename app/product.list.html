@@ -1,0 +1,9 @@
+<h2>Products</h2>
+<div *ngFor="#product of products">
+  <div class="product">
+    <img src="{{product.imgsrc}}" alt="{{product.description}}">
+    <p>{{product.name}}</p>
+    <button (click)="moreDetails(product)">{{buttonMensage}}</button>
+  </div>
+</div>
+

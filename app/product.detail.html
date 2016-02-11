@@ -1,0 +1,7 @@
+<h1>Product Detail</h1>
+<div class="product" *ngIf="product">
+  <img src="{{product.imgsrc}}" alt="{{product.description}}">
+  <p><b>{{product.name}}</b></p>
+  <p><i>{{product.description}}</i></p>
+  <button (click)="backToList()">{{buttonMensage}}</button>
+</div>
